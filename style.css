@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'January Night';
+    src: url('fonts/january_night/January\ Night.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karmatic Arcade';
+    src: url('fonts/karmatic_arcade/ka1.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    background-image: url(img/background.jpg);
+}
+
+
+
+.temporizador-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temporizador-container > h1{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #c9c9c9;
+    border-radius: 15px;
+    padding: 0rem 2rem 0rem 2rem;
+    font-family: 'January Night';
+    font-size: 4rem;
+}
+
+.Contenedor-TipoFideos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: #c9c9c9 !important;
+    margin: 10px;
+    width: 10rem;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card > h5{
+    font-family: 'January Night';
+    background-color: #c9c9c9;
+    margin-bottom: 0;
+}
+
+
+.card > img {
+    width: 100%;  /* Hace que la imagen llene el ancho del contenedor */
+    height: 7rem; /* Hace que la imagen llene el alto del contenedor */
+    object-fit: cover; /* Recorta la imagen para que encaje sin deformarse */
+}
+
+
+.btn{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+.contenedor-tiempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mostrarTiempo{
+    background-color: #c9c9c9;
+    padding: 1rem;
+    border-radius: 15px;
+    font-family: 'Karmatic Arcade';
+    font-size: 4rem;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+#confirmacionMasCocido {
+    display: none;
+    position: fixed; 
+    width: 15rem;
+    height: 15rem;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
